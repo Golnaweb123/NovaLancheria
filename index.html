@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Lux</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <button id="toggle-theme">🌙 Modo Escuro</button>
+
+  <header class="hero">
+    <nav>
+      <h1 class="logo">Burger<span>Lux</span></h1>
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Sabor que Encanta</h2>
+      <p>Hambúrgueres artesanais com um toque de sofisticação.</p>
+      <a href="#menu" class="btn">Ver Cardápio</a>
+    </div>
+  </header>
+
+  <section id="menu" class="menu-section">
+    <h2 class="section-title" data-aos="fade-right">Nosso Cardápio</h2>
+    <div class="menu-items">
+      <div class="menu-item" data-aos="zoom-in">
+        <img src="img1.png" alt="Burger Deluxe" />
+        <h3>Deluxe Burger</h3>
+        <p>Pão brioche, carne Angus, queijo trufado e molho especial.</p>
+      </div>
+      <div class="menu-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img2.jpeg" alt="Smoky BBQ" />
+        <h3>Smoky BBQ</h3>
+        <p>Defumado na lenha, queijo cheddar e cebola caramelizada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre-section" data-aos="fade-up">
+    <h2 class="section-title">Sobre Nós</h2>
+    <p>
+      A BurgerLux nasceu com a proposta de unir o sabor clássico do hambúrguer ao requinte da alta gastronomia. Ingredientes selecionados e um ambiente acolhedor são a nossa receita de sucesso.
+    </p>
+  </section>
+
+  <section id="contato" class="contato-section" data-aos="fade-up">
+    <h2 class="section-title">Faça seu Pedido</h2>
+    <form id="pedido-form">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="tel" name="telefone" placeholder="Seu telefone" required />
+      <textarea name="pedido" placeholder="Seu pedido" required></textarea>
+      <button type="submit" class="btn">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BurgerLux. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
